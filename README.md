@@ -50,8 +50,9 @@ http://localhost:3000/api/
 ```body: {
   sensor: string
   valor: double
-}```
+}
+```
 
-####DELETE
+#### DELETE
 
 `/mediciones/:id`
