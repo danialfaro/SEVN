@@ -23,7 +23,7 @@ Instalar los packages:
 
 `$ npm install`
 
-##Inicialización
+## Inicialización
 
 Arrancar el servidor:
 
@@ -43,10 +43,10 @@ Arrancar el servidor:
 
 `/mediciones`
 
-`body: {
+```body: {
   sensor: string
   valor: double
-}`
+}```
 
 ####DELETE
 
