@@ -29,17 +29,21 @@ Arrancar el servidor:
 
 `$ npm start`
 
+[http://localhost:3000](http://localhost:3000)
+
 ## API doc
 
-### recurso: Mediciones
+http://localhost:3000/api/
 
-####GET
+### mediciones
+
+##### GET
 
 `/mediciones`
 
 `/mediciones/:id`
 
-####POST
+##### POST
 
 `/mediciones`
 
