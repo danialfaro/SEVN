@@ -3,11 +3,11 @@ Aplicación JavaScript Full Stack con Sequalize - Express - Vue - Node
 
 Fase: _Sprint 0_
 
-En este repositorio se encuentra el codigo relacionado con la parte del servidor. Se han utilizado las siguientes tecnologías:
+En este repositorio se encuentra el código relacionado del servidor y el frontend. Se han utilizado las siguientes tecnologías:
 
-- XAMPP para la base de datos.
-- Node.js para el servidor.
-- Vue para el frontend.
+- [a Sequelize ORM](https://sequelize.org/)
+- Node.js con Express para el servidor y la API
+- [a Vue](https://vuejs.org/) para el frontend
 
 ## Instalación
 
@@ -23,29 +23,31 @@ Instalar los packages:
 
 `$ npm install`
 
+##Inicialización
+
 Arrancar el servidor:
 
 `$ npm start`
 
 ## API doc
 
-#### mediciones
+### recurso: Mediciones
 
-#####GET
+####GET
 
-/mediciones
+`/mediciones`
 
-/mediciones/:id
+`/mediciones/:id`
 
-#####POST
+####POST
 
-/mediciones
+`/mediciones`
 
-body: {
+`body: {
   sensor: string
   valor: double
-}
+}`
 
-#####DELETE
+####DELETE
 
-/mediciones/:id
+`/mediciones/:id`
