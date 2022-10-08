@@ -47,7 +47,8 @@ http://localhost:3000/api/
 
 `/mediciones`
 
-```body: {
+```
+body: {
   sensor: string
   valor: double
 }
