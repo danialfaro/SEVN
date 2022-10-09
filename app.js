@@ -27,6 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Rutas
 app.use('/api', require('./routes/nota'));
+app.use('/api', require('./routes/medicion'));
 
 // quito esto para que redirija directamente a Vue (public/)
 /*app.get('/', (req, res) => {
