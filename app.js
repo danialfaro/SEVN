@@ -4,20 +4,20 @@ import cors from 'cors';
 import path from 'path';
 import db from './db/sequelize.db'
 
+// Instanciamos el servidor
 const app = express();
 
-// Sequelize
+// Sequelize - se conecta a la base de datos o la inicia a partir de los modelos
 db.sync()
 //db.sync({ force: true })
     .then(() => {
-        console.log("Synced db.");
-        //console.log("Drop and re-sync db."); //!!!!
+        //console.log("Synced db.");
+        console.log("Drop and re-sync db."); //!!!!
     }).catch((err) => {
         console.log("Failed to sync db: " + err.message);
     });
 
-
-
+    
 // Middleware
 app.use(morgan('tiny'));
 app.use(cors());
@@ -41,5 +41,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('puerto', process.env.PORT || 3000);
 app.listen(app.get('puerto'), () => {
-    console.log('Example app listening on port ' + app.get('puerto'));
+    console.log('Server listening on port ' + app.get('puerto'));
 });
