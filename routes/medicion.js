@@ -6,7 +6,7 @@ import Medicion from '../models/Medicion';
 
 // Agregar una Medicion
 router.post('/mediciones', async(req, res) => {
-  const body = req.body;  
+  const body = req.body;
   try {
     const medicionDB = await Medicion.create(body);
     res.status(200).json(medicionDB); 
