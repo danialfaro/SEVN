@@ -6,9 +6,15 @@ import db from './db/sequelize.db'
 
 const app = express();
 
+<<<<<<< Updated upstream
 // Sequelize
 db.sync()
 //db.sync({ force: true })
+=======
+// Sequelize - se conecta a la base de datos o la inicia a partir de los modelos
+//db.sync()
+db.sync({ force: true })
+>>>>>>> Stashed changes
     .then(() => {
         console.log("Synced db.");
         //console.log("Drop and re-sync db."); //!!!!
