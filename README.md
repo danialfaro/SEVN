@@ -122,7 +122,7 @@ body: {
 
 #### DELETE
 
-Elimina el registro de una medicion mediante su id.
+Elimina el registro de una medicion mediante su id. Devuelve el numero de filas afectadas.
 
 `/mediciones/:id`
 
