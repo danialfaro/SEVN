@@ -85,6 +85,7 @@ response: [
 
 `/mediciones/:id`
 
+```
 response: {
     id: integer
     sensor: string
@@ -92,6 +93,7 @@ response: {
     createdAt: timestamp    
     updatedAt: timestamp
   }
+```
 
 ##### POST
 
