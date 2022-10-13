@@ -61,6 +61,8 @@ http://localhost:3000/api/
 
 ##### GET
 
+Devuelve todas las mediciones registradas.
+
 `/mediciones`
 
 ```
@@ -87,6 +89,8 @@ response: [
 ]
 ```
 
+Devuelve una medicion de entre las mediciones registradas mediante su id.
+
 `/mediciones/:id`
 
 ```
@@ -103,6 +107,8 @@ response: {
 
 ##### POST
 
+Crea una nueva medicion.
+
 `/mediciones`
 
 ```
@@ -115,5 +121,7 @@ body: {
 ```
 
 #### DELETE
+
+Elimina el registro de una medicion mediante su id.
 
 `/mediciones/:id`
