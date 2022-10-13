@@ -25,7 +25,7 @@ Clonar el repositorio del servidor dentro una carpeta:
 
 `$ git clone https://github.com/danialfaro/SEVN.git .`
 
-Instalar los packages:
+Instalar packages y dependencias:
 
 `$ npm install`
 
@@ -35,7 +35,7 @@ Clonar el repositorio del cliente web dentro otra carpeta:
 
 `$ git clone https://github.com/danialfaro/SEVN-frontend.git .`
 
-Instalar los packages:
+Instalar packages y dependencias:
 
 `$ npm install`
 
