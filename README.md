@@ -21,7 +21,7 @@ Primero es necesario tener instalado node:
 
 https://nodejs.org/es/
 
-Clonar el repositorio del servidor dentro una carpeta:
+Clonar el repositorio del **servidor** dentro una carpeta:
 
 `$ git clone https://github.com/danialfaro/SEVN.git .`
 
@@ -31,7 +31,7 @@ Instalar packages y dependencias:
 
 #### Frontend
 
-Clonar el repositorio del cliente web dentro otra carpeta:
+Clonar el repositorio del **cliente** web dentro otra carpeta:
 
 `$ git clone https://github.com/danialfaro/SEVN-frontend.git .`
 
@@ -41,13 +41,13 @@ Instalar packages y dependencias:
 
 ## 🐱‍🏍 Inicializacion 
 
-Ejecutar el siguiente comando para arrancar el servidor desde la consola en la carpeta del servidor:
+Ejecutar el siguiente comando para arrancar el **servidor** desde la consola en la carpeta del servidor:
 
 `$ npm start`
 
 [http://localhost:3000](http://localhost:3000)
 
-Ejecutar el siguiente comando para arrancar el cliente desde la consola en la carpeta del servidor:
+Ejecutar el siguiente comando para arrancar el **cliente** desde la consola en la carpeta del servidor:
 
 `$ npm run serve`
 
