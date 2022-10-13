@@ -3,11 +3,14 @@ import db from '../db/sequelize.db'
 
 const Medicion = db.define('Medicion', {
   sensor: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: false
   },
-  valor: DataTypes.STRING,
-}, {
+  valor: DataTypes.INTEGER,
+  lat: DataTypes.INTEGER,
+  lon: DataTypes.INTEGER
+}, 
+{
   tableName: "mediciones"
 });
 

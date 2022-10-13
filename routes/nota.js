@@ -59,5 +59,4 @@ router.delete('/notas/:id', async(req, res) => {
   }
 });
 
-// Exportamos la configuración de express app
 module.exports = router;

@@ -22,6 +22,7 @@ describe("Test Insertar Medicion", () => {
                 assert.equal(error, null, "Algo ha pasado.")
                 if(error) console.log(error)
                 assert.equal(response.statusCode, 200, "El codigo de respuesta es " + response.statusCode + ", deberia ser 200(OK).")
+                console.log(body)
                 done()
             });
     })    
