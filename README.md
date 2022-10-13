@@ -1,6 +1,7 @@
 # SEVN
 Aplicación JavaScript Full Stack con Sequalize - Express - Vue - Node
 
+Proyecto Aplicaciones de Biometría y Medio Ambiente UPV EPSG
 Fase: _Sprint 0_
 
 En este repositorio se encuentra el código de la aplicacion entera tanto de servidor como el cliente web. Para el backend se han utilizado las siguientes tecnologías:
