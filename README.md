@@ -11,7 +11,11 @@ En este repositorio se encuentra el código relacionado del servidor. Se han uti
 Para el frontend se ha utilizado:
 - [Vue](https://vuejs.org/)
 
-## Instalación
+
+
+## 💿 Instalación
+
+#### Backend
 
 Primero es necesario tener instalado node: 
 
@@ -25,15 +29,7 @@ Instalar los packages:
 
 `$ npm install`
 
-## Inicialización
-
-Arrancar el servidor:
-
-`$ npm start`
-
-[http://localhost:3000](http://localhost:3000)
-
-### Frontend
+#### Frontend
 
 Clonar el repositorio del cliente web dentro otra carpeta:
 
@@ -43,11 +39,19 @@ Instalar los packages:
 
 `$ npm install`
 
-## Inicialización
+## 🐱‍🏍 Inicializacion 
 
-Arrancar la web:
+Ejecutar el siguiente comando para arrancar el servidor desde la consola en la carpeta del servidor:
+
+`$ npm start`
+
+[http://localhost:3000](http://localhost:3000)
+
+Ejecutar el siguiente comando para arrancar el cliente desde la consola en la carpeta del servidor:
 
 `$ npm run serve`
+
+[http://localhost:8000](http://localhost:3000)
 
 ## API doc
 
@@ -62,12 +66,18 @@ http://localhost:3000/api/
 ```
 response: [
   {
+    id: integer
     sensor: string
-    valor: double
+    valor: string
+    createdAt: timestamp    
+    updatedAt: timestamp
   },
   {
+    id: integer
     sensor: string
-  valor: double
+    valor: string
+    createdAt: timestamp    
+    updatedAt: timestamp
   },
   ...
 ]
@@ -75,13 +85,21 @@ response: [
 
 `/mediciones/:id`
 
+response: {
+    id: integer
+    sensor: string
+    valor: string
+    createdAt: timestamp    
+    updatedAt: timestamp
+  }
+
 ##### POST
 
 `/mediciones`
 
 ```
 body: {
-  sensor: string
+  sensor: integer
   valor: double
 }
 ```
