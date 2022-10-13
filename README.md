@@ -125,3 +125,7 @@ body: {
 Elimina el registro de una medicion mediante su id.
 
 `/mediciones/:id`
+
+```
+1
+```
