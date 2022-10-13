@@ -3,11 +3,13 @@ Aplicación JavaScript Full Stack con Sequalize - Express - Vue - Node
 
 Fase: _Sprint 0_
 
-En este repositorio se encuentra el código relacionado del servidor y el frontend. Se han utilizado las siguientes tecnologías:
+En este repositorio se encuentra el código relacionado del servidor. Se han utilizado las siguientes tecnologías:
 
 - [Sequelize ORM](https://sequelize.org/)
 - Node.js con Express para el servidor y la API
-- [Vue](https://vuejs.org/) para el frontend
+
+Para el frontend se ha utilizado:
+- [Vue](https://vuejs.org/)
 
 ## Instalación
 
