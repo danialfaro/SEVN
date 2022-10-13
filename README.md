@@ -67,15 +67,19 @@ http://localhost:3000/api/
 response: [
   {
     id: integer
-    sensor: string
-    valor: string
+    sensor: integer
+    valor: integer
+    lat: integer
+    lon: integer
     createdAt: timestamp    
     updatedAt: timestamp
   },
   {
     id: integer
-    sensor: string
-    valor: string
+    sensor: integer
+    valor: integer
+    lat: integer
+    lon: integer
     createdAt: timestamp    
     updatedAt: timestamp
   },
@@ -88,8 +92,10 @@ response: [
 ```
 response: {
     id: integer
-    sensor: string
-    valor: string
+    sensor: integer
+    valor: integer
+    lat: integer
+    lon: integer
     createdAt: timestamp    
     updatedAt: timestamp
   }
@@ -102,7 +108,9 @@ response: {
 ```
 body: {
   sensor: integer
-  valor: double
+  valor: integer
+  lat: integer
+  lon: integer
 }
 ```
 
