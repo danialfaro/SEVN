@@ -17,7 +17,7 @@ Primero es necesario tener instalado node:
 
 https://nodejs.org/es/
 
-Clonar el repositorio dentro una carpeta:
+Clonar el repositorio del servidor dentro una carpeta:
 
 `$ git clone https://github.com/danialfaro/SEVN.git .`
 
@@ -33,6 +33,22 @@ Arrancar el servidor:
 
 [http://localhost:3000](http://localhost:3000)
 
+### Frontend
+
+Clonar el repositorio del cliente web dentro otra carpeta:
+
+`$ git clone https://github.com/danialfaro/SEVN-frontend.git .`
+
+Instalar los packages:
+
+`$ npm install`
+
+## Inicialización
+
+Arrancar la web:
+
+`$ npm run serve`
+
 ## API doc
 
 http://localhost:3000/api/
@@ -42,6 +58,20 @@ http://localhost:3000/api/
 ##### GET
 
 `/mediciones`
+
+```
+response: [
+  {
+    sensor: string
+    valor: double
+  },
+  {
+    sensor: string
+  valor: double
+  },
+  ...
+]
+```
 
 `/mediciones/:id`
 
