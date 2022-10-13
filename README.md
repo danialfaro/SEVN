@@ -6,7 +6,7 @@ Fase: _Sprint 0_
 En este repositorio se encuentra el código relacionado del servidor. Se han utilizado las siguientes tecnologías:
 
 - [Sequelize ORM](https://sequelize.org/)
-- Node.js con Express para el servidor y la API
+- [Node.js](https://nodejs.org/es/) con [Express](https://expressjs.com/) para el servidor y la API
 
 Para el frontend se ha utilizado:
 - [Vue](https://vuejs.org/)
