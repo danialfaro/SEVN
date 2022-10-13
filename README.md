@@ -3,33 +3,55 @@ Aplicación JavaScript Full Stack con Sequalize - Express - Vue - Node
 
 Fase: _Sprint 0_
 
-En este repositorio se encuentra el código relacionado del servidor y el frontend. Se han utilizado las siguientes tecnologías:
+En este repositorio se encuentra el código de la aplicacion entera tanto de servidor como el cliente web. Para el backend se han utilizado las siguientes tecnologías:
 
 - [Sequelize ORM](https://sequelize.org/)
-- Node.js con Express para el servidor y la API
-- [Vue](https://vuejs.org/) para el frontend
+- [Node.js](https://nodejs.org/es/) con [Express](https://expressjs.com/) para el servidor y la API
 
-## Instalación
+Para el frontend se ha utilizado:
+- [Vue](https://vuejs.org/)
+
+
+
+## 💿 Instalación
+
+#### Backend
 
 Primero es necesario tener instalado node: 
 
 https://nodejs.org/es/
 
-Clonar el repositorio dentro una carpeta:
+Clonar el repositorio del **servidor** dentro una carpeta:
 
 `$ git clone https://github.com/danialfaro/SEVN.git .`
 
-Instalar los packages:
+Instalar packages y dependencias:
 
 `$ npm install`
 
-## Inicialización
+#### Frontend
 
-Arrancar el servidor:
+Clonar el repositorio del **cliente** web dentro otra carpeta:
+
+`$ git clone https://github.com/danialfaro/SEVN-frontend.git .`
+
+Instalar packages y dependencias:
+
+`$ npm install`
+
+## 🐱‍🏍 Inicializacion 
+
+Ejecutar el siguiente comando para arrancar el **servidor** desde la consola en la carpeta del servidor:
 
 `$ npm start`
 
 [http://localhost:3000](http://localhost:3000)
+
+Ejecutar el siguiente comando para arrancar el **cliente** desde la consola en la carpeta del servidor:
+
+`$ npm run serve`
+
+[http://localhost:8000](http://localhost:3000)
 
 ## API doc
 
@@ -41,7 +63,37 @@ http://localhost:3000/api/
 
 `/mediciones`
 
+```
+response: [
+  {
+    id: integer
+    sensor: string
+    valor: string
+    createdAt: timestamp    
+    updatedAt: timestamp
+  },
+  {
+    id: integer
+    sensor: string
+    valor: string
+    createdAt: timestamp    
+    updatedAt: timestamp
+  },
+  ...
+]
+```
+
 `/mediciones/:id`
+
+```
+response: {
+    id: integer
+    sensor: string
+    valor: string
+    createdAt: timestamp    
+    updatedAt: timestamp
+  }
+```
 
 ##### POST
 
@@ -49,7 +101,7 @@ http://localhost:3000/api/
 
 ```
 body: {
-  sensor: string
+  sensor: integer
   valor: double
 }
 ```
