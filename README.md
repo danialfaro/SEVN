@@ -1,6 +1,8 @@
 # SEVN
 Aplicación JavaScript Full Stack con Sequalize - Express - Vue - Node
 
+Proyecto Aplicaciones de Biometría y Medio Ambiente UPV EPSG
+
 Fase: _Sprint 0_
 
 En este repositorio se encuentra el código de la aplicacion entera tanto de servidor como el cliente web. Para el backend se han utilizado las siguientes tecnologías:
@@ -61,21 +63,27 @@ http://localhost:3000/api/
 
 ##### GET
 
+Devuelve todas las mediciones registradas.
+
 `/mediciones`
 
 ```
 response: [
   {
-    id: integer
-    sensor: string
-    valor: string
+    id: int
+    sensor: int
+    valor: int
+    lat: int
+    lon: int
     createdAt: timestamp    
     updatedAt: timestamp
   },
   {
-    id: integer
-    sensor: string
-    valor: string
+    id: int
+    sensor: int
+    valor: int
+    lat: int
+    lon: int
     createdAt: timestamp    
     updatedAt: timestamp
   },
@@ -83,13 +91,17 @@ response: [
 ]
 ```
 
+Devuelve una medicion de entre las mediciones registradas mediante su id.
+
 `/mediciones/:id`
 
 ```
 response: {
-    id: integer
-    sensor: string
-    valor: string
+    id: int
+    sensor: int
+    valor: int
+    lat: int
+    lon: int
     createdAt: timestamp    
     updatedAt: timestamp
   }
@@ -97,15 +109,25 @@ response: {
 
 ##### POST
 
+Crea una nueva medicion.
+
 `/mediciones`
 
 ```
 body: {
-  sensor: integer
-  valor: double
+  sensor: int
+  valor: int
+  lat: int
+  lon: int
 }
 ```
 
 #### DELETE
 
+Elimina el registro de una medicion mediante su id. Devuelve el numero de filas afectadas.
+
 `/mediciones/:id`
+
+```
+1
+```
