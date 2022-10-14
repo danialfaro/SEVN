@@ -7,7 +7,7 @@ import Medicion from '../models/Medicion';
 import { io } from '../app'
 
 // Agregar una Medicion 
-// medicion: { id, sensor, valor }
+// medicion: { id, sensor, valor, lat, lon, createdAt, updatedAt }
 router.post('/mediciones', async(req, res) => {
   const body = req.body;
   try {
@@ -23,7 +23,7 @@ router.post('/mediciones', async(req, res) => {
 });
 
 // Get con parámetros
-// medicion: { id, sensor, valor }
+// medicion: { id, sensor, valor, lat, lon, createdAt, updatedAt }
 router.get('/mediciones/:id', async(req, res) => {
   const _id = req.params.id;
   try {

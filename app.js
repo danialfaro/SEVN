@@ -12,7 +12,7 @@ const app = express();
 
 // Sequelize - se conecta a la base de datos o la inicia a partir de los modelos
 db.sync()
-    //db.sync({ force: true })
+//db.sync({ force: true })
     .then(() => {
         //console.log("Synced db.");
         console.log("Drop and re-sync db."); //!!!!
