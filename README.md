@@ -31,10 +31,6 @@ Instalar packages y dependencias:
 
 `$ npm install`
 
-Para ejecutar los **tests**, utilizar el comando:
-
-`$ npm run test`
-
 #### Frontend
 
 Clonar el repositorio del **cliente** web dentro otra carpeta:
@@ -53,11 +49,11 @@ Ejecutar el siguiente comando para arrancar el **servidor** desde la consola en 
 
 [http://localhost:3000](http://localhost:3000)
 
-Ejecutar el siguiente comando para arrancar el **cliente** desde la consola en la carpeta del servidor:
+Ejecutar el siguiente comando para arrancar el **cliente** desde la consola en la carpeta del cliente frontend:
 
 `$ npm run serve`
 
-[http://localhost:8000](http://localhost:3000)
+[http://localhost:8080](http://localhost:8080)
 
 ## API doc
 
