@@ -49,7 +49,7 @@ Ejecutar el siguiente comando para arrancar el **servidor** desde la consola en 
 
 [http://localhost:3000](http://localhost:3000)
 
-Ejecutar el siguiente comando para arrancar el **cliente** desde la consola en la carpeta del servidor:
+Ejecutar el siguiente comando para arrancar el **cliente** desde la consola en la carpeta del cliente frontend:
 
 `$ npm run serve`
 
