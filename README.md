@@ -53,7 +53,7 @@ Ejecutar el siguiente comando para arrancar el **cliente** desde la consola en l
 
 `$ npm run serve`
 
-[http://localhost:8000](http://localhost:8000)
+[http://localhost:8080](http://localhost:8080)
 
 ## API doc
 
