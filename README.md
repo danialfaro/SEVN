@@ -31,6 +31,10 @@ Instalar packages y dependencias:
 
 `$ npm install`
 
+Para ejecutar los **tests**, utilizar el comando:
+
+`$ npm run test`
+
 #### Frontend
 
 Clonar el repositorio del **cliente** web dentro otra carpeta:
