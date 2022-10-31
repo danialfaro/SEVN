@@ -17,4 +17,4 @@ const db = new Sequelize({
   storage: 'db/database.sqlite'
 });
 
-export default db;  
+export default db;

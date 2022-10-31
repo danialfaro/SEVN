@@ -22,7 +22,7 @@ module.exports = {
         }).catch(err => {
             res.status(500).json({
                 mensaje: 'Ups! Algo ha fallado.',
-                error: error
+                error: err
             })
         })
 

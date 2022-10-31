@@ -1,14 +1,25 @@
 import { DataTypes } from "sequelize"
 import db from '../db/sequelize.db'
 
-const Medicion = db.define('Medicion', {
+const Medicion = db.define('medicion', {
   sensor: {
     type: DataTypes.INTEGER,
-    allowNull: false
+    allowNull: false,
+    validate: {
+      notNull: {
+        msg: 'Please enter a sensor'
+      }
+    }
   },
-  valor: DataTypes.INTEGER,
-  lat: DataTypes.INTEGER,
-  lon: DataTypes.INTEGER
+  valor: {
+    type: DataTypes.INTEGER,
+  },
+  lat: {
+    type: DataTypes.INTEGER
+  },
+  lon: {
+    type: DataTypes.INTEGER
+  }
 }, 
 {
   tableName: "mediciones"
